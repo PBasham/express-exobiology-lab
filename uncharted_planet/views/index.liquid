@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New ---</title>
+</head>
+<body>
+        <h1>Current Scientist on planet</h1>
+        <ul>
+            {% for scientist in allScientist %}
+            <li>
+                <a href="/index/{{forloop.index0}}">{{scientist.name}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        
+        <a href="/new">Create new scientist >></a>
+</body>
+</html>
